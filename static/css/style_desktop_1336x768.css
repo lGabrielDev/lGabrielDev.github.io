@@ -1,0 +1,303 @@
+/* Desktop - 1336 x 768 */
+
+/* colors */
+:root{
+    --backgroundDark: #16161A;
+    --backgroundGrey: #242629;
+    --lightColor: #E3E2DD;
+    --navColor: #879DB2;
+    --github_green: #289E61;
+}
+
+@media screen and (min-width:1336px) and (max-width:1919px){
+    /* --------------- general --------------- */    
+    html{
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+
+    .section{
+        min-height: 582px;
+        height: 109%;
+    }
+
+    .content{ 
+        height: 80%;
+        width: 1002px;
+        margin-top: 107px;
+    }
+
+    .title{
+        font-size: 52px;
+    }
+
+    .arrow_down_container{
+        position: absolute;
+        bottom: -4px;
+    }
+
+    .arrow_down_container:hover{
+        .arrow_icon{
+            font-size: 26px;
+        }
+    }
+
+    a.arrow_icon{
+        font-size: 22px;
+    }
+
+    /* dark mode */
+    img.night_mode_icon{
+        width: 34px;
+    }
+
+    /* --------------- header --------------- */
+    .header{
+        height: 47px;
+    }
+
+    a.navlink{
+        font-size: 23px;
+    }
+
+
+    /* --------------- home section --------------- */
+    /* left side */
+    .im_gabriel{
+        font-size: 34px;
+        align-self: auto;
+        margin-bottom: 14px;
+    }
+
+    .hi_there,
+    .backend_developer{
+        font-size: 18px;
+        align-self: auto;
+    }
+
+    .hi_there{
+        left: -56px;
+    }
+
+    a.curriculo_home_button{
+        width: 137px;
+        height: 40px;
+    }
+
+    a.curriculo_home_button:hover{
+        width: 137px;
+    }
+
+    .curriculo_span{
+        font-size: 15px;
+        margin-right: 12px;
+    }
+
+    i.dowload_icon{
+        font-size: 17px;
+    }
+
+
+    /* right side */
+    img.profile_grey_picture{
+        width: 301px;
+        height: 301px;
+    }
+
+    .nickname:hover{
+        .nickname_span{
+             font-size: 17px;
+        }
+
+        i.github_icon{
+            font-size: 20px;
+        }
+    }
+
+    .nickname_span{
+        font-size: 17px;
+    }
+
+    i.github_icon{
+        font-size: 20px;
+    }
+
+
+    /* --------------- about section --------------- */
+    /* left side */
+    .about_text_container {
+        width: 89%;
+    }
+
+    /* right side */
+    .about_title_container{
+        width: 40%;
+    }
+
+    .paragraphs > p{
+        font-size: 17px;
+    }
+
+    .paragraphs > p:hover{
+        font-size: 18px;
+    }
+
+
+    /* --------------- skills section --------------- */
+    /* right side */
+    .all_skills_cards{
+        width: 609px;
+        height: 445px;
+    }
+
+    .skillCard{
+        height: 100px;
+        width: 100px;
+    }
+
+    .skillCard:hover{
+        height: 110px;
+        width: 110px;
+    }
+
+    img.skill_icon{
+        width: 43px;
+    }
+
+    p.skill_title{
+        font-size: 15px;
+    }
+
+    /* --------------- projects section --------------- */
+    .projects_section{
+        height: 100%;
+        min-height: 977px;
+    }
+
+    .projects_content{
+        min-height: 841px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* right side */
+    .projects_cards_container{
+        width: 835.5px;
+        height: 633px;
+        position: relative;
+        bottom: 45px;
+        margin-top: 81px;
+    }
+
+    .project_card{
+        width: 254px;
+        height: 289px;
+        padding: 10px;
+        padding-top: 15px;
+    }
+
+    .project_card:hover{
+        width: 264px;
+        height: 299px;
+    }
+
+    .todo_image{
+        width: 92%;
+        height: 127px;
+        border-radius: 17px 17px 0px 0px;
+    }
+
+    .todo_title_and_text{
+        width: 93%;
+    }
+
+    p.project_card_title{
+        font-size: 17px;
+    }
+
+    .project_card_description{
+        font-size: 12px;
+    }
+
+    /* left side */
+    .projects_title_container{
+        height: 5%;
+        position: absolute;
+        top: 19px;
+    }
+
+    .projects_arrow_icon{
+        font-size: 22px;
+    }
+
+
+    /* --------------- contact section --------------- */
+    .contact_section{
+        min-height: 557px;
+        height: 95%;
+    }
+
+    .contact_rows {
+        width: 373px;
+    }
+
+    /* first row */
+    .contact_first_row_container{
+        height: 110px;
+    }
+
+    .contact_card{
+        height: 100%;
+        width: 110px;
+    }
+
+    .contact_card:hover{
+        height: 106px;
+        width: 106px;
+    }
+
+    /* second and third row */
+    .contact_second_row_container,
+    .contact_third_row_container{
+        height: 52px;
+    }
+
+    .phone_email_content{
+        height: 100%;
+        width: 100%;
+    }
+
+    .phone_email_content:hover{
+        height: 58px;
+        width: 341;
+    }
+
+    .contact_card_title{
+        font-size: 15px;
+    }
+
+    .contact_card_image{
+        font-size: 45px;
+    }
+
+    .github_contact_card{
+        margin-right: 0px;
+    }
+
+    .phone_email_text{
+        font-size: 15px;
+    }   
+
+
+    /* --------------- author section --------------- */
+    .author_section{
+        bottom: 0px;
+    }
+
+    .author_message{
+        font-size: 10px;
+    }
+
+    i.profile_image_author{
+        font-size: 14px;
+    }
+}

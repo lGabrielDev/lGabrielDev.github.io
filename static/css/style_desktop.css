@@ -1,0 +1,761 @@
+/* DESKTOP - 1920 x 1080 */
+
+/* font -->  JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;800&display=swap');
+
+/* colors */
+:root{
+    --backgroundDark: #16161A;
+    --backgroundGrey: #242629;
+    --lightColor: #E3E2DD;
+    --navColor: #879DB2;
+    --github_green: #289E61;
+}
+
+.light_mode_on{
+    --backgroundDark: #E3E2DD; /* Fundo claro */
+    --backgroundGrey: #C1C0BC; /* Cinza claro */
+    --lightColor: #16161A; /* Cor escura para o texto */
+    --navColor: #344b61; /* Cor para a barra de navegação */
+    --github_green: #344b61; /* Verde */
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    color: var(--lightColor);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--backgroundDark);
+    transition-duration: 0.3s;
+}
+
+
+
+
+/* --------- header --------- */
+.header{
+    width: 100vw;
+    height: 70px;
+    
+    background-color: var(--backgroundDark);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+/* nav */
+.nav{
+    width: 673px;
+    height: 42px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlink{
+    margin-right: 33px;
+    font-size:28px;
+
+    text-decoration: none;
+    color: var(--navColor);
+    transition-duration: 0.3s;
+}
+
+.navlink:hover{
+    color: var(--lightColor);
+}
+
+.last_link{
+    margin-right: 0px;
+}
+
+i.hambuguer_button{
+    display: none;
+    font-size: 33px;
+    color: var(--lightColor);
+    cursor: pointer;
+}
+
+
+img.night_mode_icon{
+    position: absolute;
+    right: 33px;
+    width: 49px;
+    cursor: pointer;
+}
+
+/* --------- general--------- */
+.section{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content{
+    width: 95%;
+    height: 83%;
+
+    margin-top: 140px;
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* left side content */
+.left_side{
+    width: 49%;
+    height: 100%;
+}
+
+/* right side content */
+.right_side{
+    width: 49%;
+    height: 100%;
+}
+
+/* arrow down */
+.arrow_down_container{
+    width: 2%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.arrow_down_container:hover{
+    .arrow_icon{
+        color: var(--navColor);
+
+        font-size: 44px;
+        transition-duration: 0.3s;
+    }
+}
+
+.arrow_icon{
+    font-size: 36px;
+    color: var(--lightColor);
+}
+
+/* ------------------ home section ------------------ */
+.home_section{
+    background-color: var(--backgroundDark);
+}
+
+.home_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+}
+
+/* left side - messages  */
+.messages_container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.message_and_button{
+    width: 412px;
+    height: 249px;
+
+    margin-top: 3px;
+    margin-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+.hi_there{
+    font-size: 32px;
+    margin-top: -4px;
+    
+    position: relative;
+    left: -78px;
+}
+
+.im_gabriel{
+    font-size: 55px;
+
+    align-self: flex-end;
+}
+
+.backend_developer{
+    margin-top:-17px;
+    font-size: 36px;
+}
+
+
+.curriculo_button_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a.curriculo_home_button{
+    width: 222px;
+    height: 64.53px;
+    margin-top: 26px;
+    
+    background-color: var(--lightColor);
+    color: var(--backgroundDark);
+    border-radius: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    transition-duration: 0.3s;
+}
+
+a.curriculo_home_button:hover{
+    width: 242px;
+    background-color: var(--navColor);
+
+    .curriculo_span{
+        color: var(--backgroundDark);
+    }
+
+    i.dowload_icon{
+        color: var(--backgroundDark);
+    }
+}
+
+.curriculo_span{
+    margin-right: 20px;
+
+    color: var(--backgroundDark);
+    font-size: 28px;
+
+    
+}
+
+i.dowload_icon{
+    font-size: 21px;
+    color: var(--backgroundDark);
+}
+
+
+
+/* image - right side */
+.image_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_grey_picture{
+    width: 420px;
+    height: 420px;
+    margin-top: 2px;
+}
+
+.nickname{
+    margin-top: 13px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nickname:hover{
+    .nickname_span, .github_icon{
+        font-size: 35px;
+        color: var(--navColor);
+    }
+
+    .github_icon{
+        font-size: 49px;
+    }
+}
+
+.nickname_span{
+    margin-right: 10px;
+    font-size: 32px;
+    transition-duration: 0.3s;
+}
+
+.github_icon{
+    font-size: 46px;
+    transition-duration: 0.3s;
+}
+
+
+/* ------------------ about section ------------------ */
+/* paragraphs left side */
+.about_section{
+    background-color: var(--backgroundGrey);
+}
+
+.about_content{
+    display: flex;
+    flex-direction: row;
+}
+
+.about_text_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.paragraphs{
+    width: 100%;
+    height: fit-content;
+}
+
+.paragraphs p{
+    margin-top: 36px;
+    font-size: 18px;
+    text-align: justify;
+    color: var(--navColor);
+
+    transition-duration: 0.3s;
+}
+
+.paragraphs p:hover{
+    color: var(--lightColor);
+    font-size: 19px;
+}
+
+/* title  - right side */
+.about_title_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 70px;
+}
+
+
+/* ------------------ skills section ------------------ */
+.skills_section{
+    background-color: var(--backgroundDark);
+}
+
+.skills_content{
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* left side */
+.skill_title_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* right side */
+.icons_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.all_skills_cards{
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.skillCard{
+    height: 167px;
+    width: 167px;
+    margin-right: 19px;
+    margin-bottom: 19px;
+
+    background-color: var(--backgroundGrey);
+    border-radius: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.3s;
+}
+
+.skillCard:hover{
+    width: 180px;
+    height: 180px;
+    background-color: var(--lightColor);
+
+    p.skill_title{
+        color: var(--backgroundDark);
+    }
+}
+
+img.skill_icon{
+    width: 75px;
+    margin-bottom: 12px;
+}
+
+p.skill_title{
+    font-size: 20px;
+}
+
+/* backend cards */
+.cards{
+    margin-top: 17px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+/* ------------------ projects section ------------------ */
+.projects_section{
+    background-color: var(--backgroundGrey);
+}
+
+.projects_content{
+    display: flex;
+    flex-direction: row; 
+}
+
+.projects_cards_container{
+    width: 63%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.projects_title_container{
+    width: 35%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* left side - cards */
+.project_card{
+    width: 337px;
+    height: 337px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    padding: 9px;
+
+    background-color: var(--backgroundDark);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    transition-duration: 0.3s;
+}
+
+.project_card:hover{
+    width: 347px;
+    height: 347px;
+
+    .project_card_github_button{
+        background-color: var(--github_green);
+        color: var(--backgroundDark);
+    }
+
+    .project_card_github_icon, 
+    .check_github_text{
+        color: var(--backdgroundGrey);
+    }
+}
+
+
+/* under construction cards */
+.project_card_3,
+.project_card_6{
+    margin-right: 0px;
+}
+
+.project_card_4,
+.project_card_5,
+.project_card_6{
+    margin-bottom: 0px;
+}
+
+
+
+.todo_image{
+    width: 100%;
+    height: 160px;
+    border-radius: 20px;
+}
+
+.todo_title_and_text{
+    width: 304px;
+    height: fit-content;
+    margin-top: 4px;
+}
+
+.project_card_title{
+    font-size: 25px;
+}
+
+.project_card_description{
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+.project_card_github_button{
+    width: 106px;
+    height: 30px;
+    padding: 17px;
+
+    background-color: var(--backgroundDark);
+    border: 1px solid var(--github_green);
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 15px;
+
+    transition-duration: 0.3s;
+}
+
+.project_card_github_icon{
+    color: var(--github_green);
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+.check_github_text{
+    color: var(--github_green);
+    font-size: 15px;
+    margin-right: 7px;
+}
+
+/* arrow scroll down */
+.projects_arrow_down_container {
+    position: absolute;
+    bottom: -15px;
+}
+
+
+.projects_arrow_icon{
+    font-size: 36px;
+}
+
+
+/* ------------------ contact section ------------------ */
+.contact_section{
+    background-color: var(--backgroundDark);
+    position: relative;
+}
+
+.contact_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* left side */
+.contact_left_side{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_right_side{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* right side */
+.contact_rows{
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* first row */
+.contact_first_row_container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_card{
+    height: 168px;
+    width: 168px;
+    margin-right: 17px;
+    border-radius: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--backgroundGrey);
+    transition-duration: 0.3s
+}
+
+.contact_card:hover {
+    width: 180px;
+    height: 180px;
+    background-color: var(--lightColor);
+
+    .contact_card_title,
+    .contact_card_image{
+        color: var(--backgroundGrey);
+    }
+}
+
+.contact_github_card{
+    margin-right: 0px;
+}
+
+.contact_card_image{
+    font-size: 75px;
+    margin-bottom: 12px;
+    color: var(--lightColor);
+}
+
+.contact_card_title{
+    font-size: 20px;
+}
+
+.phone_email_content{
+    height: 85px;
+    width: 544px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--backgroundGrey);
+    transition-duration: 0.3s;
+}
+
+.phone_email_content:hover{
+    height: 95px;
+    width: 554px;
+    background-color: var(--lightColor);
+
+    .phone_email_icons,
+    .phone_email_text{
+        color: var(--backgroundGrey);
+    }
+}
+
+.phone_email_icons{
+    margin-right: 15px;
+    font-size: 24px;
+}
+
+.phone_email_text{
+    font-size: 24px;
+}
+
+/* second row  - phone */
+.contact_phone_content{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* third row  - email */
+.contact_email_content{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* --------- author section --------- */
+.author_section{
+    position: relative;
+    bottom: 27px;
+    border-top: 3px solid var(--backgroundGrey);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+
+}
+
+.author_message_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.author_message{
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.profile_image_author{
+    width: 21px;
+}
+

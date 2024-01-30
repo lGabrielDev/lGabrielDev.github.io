@@ -1,0 +1,589 @@
+/* mobile 347 - 591 or minor */
+
+/* colors */
+:root{
+    --backgroundDark: #16161A;
+    --backgroundGrey: #242629;
+    --lightColor: #E3E2DD;
+    --navColor: #879DB2;
+    --github_green: #289E61;
+}
+
+@media screen and (max-width:1335px) {
+    /* ------------------- general ------------------- */
+    .section{
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content{
+        width: 92%;
+        height: 84%;
+        margin-top: 60px;
+    
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .left_side{
+        width: 97%;
+        height: 47.5%;
+    }
+    
+    .right_side{
+        width: 97%;
+        height: 47.5%;
+    }
+
+    .arrow_down_container{
+        height: 5%;
+        width: fit-content;
+        position: absolute;
+        bottom: 40px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arrow_down_container:hover{
+        .arrow_icon{
+            font-size: 33px;
+        }
+    }
+
+    .arrow_icon{
+        font-size: 31px;
+    }
+
+    .title{
+        font-size: 29px;
+    }
+
+    /* dark mode icon */
+    img.night_mode_icon{
+        width: 30px;
+    }
+
+
+    /* ------------------- header ------------------- */
+    .header{
+        height: 80px;
+        transition-duration: 0.3s;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 0.3;
+
+    }
+
+    .navlink{
+        display: none;
+    }
+
+    i.hambuguer_button{
+        display: block;
+        font-size: 33px;
+        color: var(--navColor);
+        transition-duration: 0.3s;
+    }
+
+    i.hambuguer_button:hover{
+        color: var(--lightColor);
+    }
+
+    .header_mobile_hamburguer_on{
+        height:100vh;
+    }
+
+    .nav_mobile_hamburguer_on{
+        margin-top: 50px;
+        z-index: -1;
+        width: 93%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .navlink_hamburguer_on{
+        display: block;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .home_link_hamburguer_on {
+        margin-top: 30px;
+    }
+
+
+    /* ------------------- home section ------------------- */
+    /* image container  */
+    .home_section{
+        min-height: 580px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home_content{
+        position: relative;
+        width: 96%;
+        height: 84%;
+    }
+
+    .image_container{
+        order: 1;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .profile_grey_picture{
+        order: 3;
+        width: 203px;
+        height: 203px;
+    }
+
+    .nickname{
+        margin-top: 3px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .nickname:hover{
+        .nickname_span{
+            font-size: 17px;
+        }
+
+        i.github_icon {
+            font-size: 15px;
+        }
+    }
+
+    span.nickname_span{
+        font-size: 17px;
+    }
+
+    i.github_icon {
+        font-size: 15px;
+    }
+
+    /* message container */
+    .messages_container{
+        order: 2;
+        align-items: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    p.im_gabriel{
+        font-size: 29px;
+    }
+
+    p.hi_there,
+    p.backend_developer{
+        font-size: 16px;
+    }
+
+    .message_and_button{
+        width: 257px;
+        height: fit-content;
+
+        margin-left: 0px;
+        margin-top: 29px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-center;
+    }
+
+    .curriculo_button_container{
+        display: none;
+    }
+
+    .message_and_button > p{
+        margin: 0px; /* margin reset */
+        position: static;
+        margin-bottom: 20px;
+        align-self: auto;
+    }
+
+    p.hi_there,
+    p.backend_developer{
+        font-size: 21px;
+    }
+
+    p.hi_there{
+        align-self: flex-start;
+    }
+
+    p.im_gabriel{
+        font-size: 35px;
+        align-self: center;
+        margin-bottom: 0px;
+    }
+
+    p.backend_developer{
+        align-self: flex-end;
+    }
+
+    /* arrow */
+    .home_arrow_down_container{
+        order: 3;
+        bottom: 66px;
+    }
+
+
+    /* ------------------- about section ------------------- */
+    /* about section */
+    .about_section{
+        min-height: 701px; 
+    }
+
+    /* about content */
+    .about_content{
+        min-height: 600px;
+        width: 336px;
+    }
+
+    /* title container */
+    .about_title_container{
+        order: 1;
+        height: 15%;
+    }
+
+    /* paragraphs container */
+    .about_text_container{
+        order: 2;
+        height: 80%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .paragraphs{
+        width: 98%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paragraphs > p {
+        width: 98%;
+        font-size: 15px;
+    }
+
+    .paragraphs > p:hover{
+        font-size: 17px;
+    }
+
+
+    /* ------------------- skills section ------------------- */
+    /* skills content */
+    .skill_section{
+        min-height: 741px;
+    }
+
+    .skills_content{
+        min-height: 663px;
+        margin-top: 82px;
+    }
+
+    /* title container */
+    .skill_title_container{
+        height: 15%;
+    }
+
+    /* cards container */
+    .icons_container{
+        height: 80%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .all_skills_cards{
+        width: 233px;
+        height: 464px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .skillCard{
+        width: 20px;
+        height: 20px;
+        margin: 7px;
+        padding: 30px;
+        box-sizing: content-box;
+    }
+
+    .skillCard:hover{
+        width: 30px;
+        height: 30px;
+        padding: 33px;
+
+        p.skill_title{
+            font-size: 14px;
+        }
+    }
+
+    .skillCard_spring,
+    .skillCard_docker,
+    .skillCard_css,
+    .skillCard_linux,
+    .skillCard_git{
+        margin-right: 0px;
+    }
+
+    .skillCard_java,
+    .skillCard_psql,
+    .skillCard_html,
+    .skillCard_js,
+    .skillCard_git{
+        margin-left: 0px;
+    }
+
+    .skillCard_git{
+        margin-bottom: 0px;
+    }
+
+    .skillCard_java,
+    .skillCard_spring{
+        margin-top: 0px;
+    }
+
+
+    img.skill_icon{
+        width: 47px;
+        height: 47px;
+        margin-bottom: 6px;
+    }
+
+    p.skill_title{
+        font-size: 11px;
+    }
+
+
+    /* ------------------- projects section ------------------- */
+   .projects_section{
+        height: 2668px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+   }
+
+    .projects_content{
+        height: fit-content;
+        width: 336px;
+        margin-top: 75px;
+    }
+
+    /* title container */
+    .projects_title_container{
+        order: 1;
+        height: 89px;
+    }
+
+    /* cards container */
+    .projects_cards_container{
+        order: 2;
+        height: 100%;
+        width: 92%;
+        margin: 0px;
+    }
+
+    /* cards */
+    .project_card {
+        width: 99%;
+        height: 349px;
+
+        padding: 14px 9px;
+        margin: 0px;
+        margin-bottom: 60px;
+
+    }
+
+    .project_card:hover {
+        width: 334px;
+        height: 359px;
+    }
+
+
+    .project_card_6{
+        margin-bottom: 0px;
+    }
+
+    .todo_image{
+        width: 92%;
+        height: 56%;
+        transition-duration: 0.3s;
+    }
+
+    .todo_title_and_text{
+        width: 92%;
+    }
+
+    .project_card_title{
+        font-size: 19px;
+        margin-top: 8px;
+    }
+
+    .project_card_description{
+        font-size: 12px;
+    }
+
+    /* github button */
+    .project_card_github_button{
+        width: 107px;
+        padding: 17px;
+    }
+
+    .check_github_text{
+        font-size: 16px;
+    }
+
+    .project_card_github_icon{
+        font-size: 19px;
+    }
+
+    /* arrow */
+    .projects_arrow_down_container{
+        order: 2;
+        position: relative;
+        top: 43px;
+    }
+
+
+    /* ------------------- contact section ------------------- */
+    /* contact section */
+    .contact_section{
+        min-height: 527px;
+        height: 91%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    /* contact content */
+    .contact_content{
+        width: 336px;
+        min-height: 100px;
+        height: 94%;
+
+        margin-top: 74px;
+    }
+
+    /* title container */
+    .contact_left_side{
+        height: 89px;
+    }
+
+    /* all rows */
+    .contact_rows{
+        width: 98%;
+        height: 94px;
+    }
+
+    .contact_right_side{
+        height: 222px;
+        width: 97%;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 74px;
+    }
+
+    /* first row */
+    .contact_first_row_container{
+        margin-bottom: 20px;
+    }
+
+    .contact_card{
+        width: 31%;
+        height: 100%;
+        margin-right: 10px;
+    }
+
+    .contact_card:hover{
+        width: 104px;
+        height: 104px;
+    }
+
+    .github_contact_card{
+        margin-right: 0px;
+    }
+
+    p.contact_card_title{
+        font-size: 12px;
+    }
+
+    /* phone and email rows */
+    .contact_second_row_container,
+    .contact_third_row_container{
+        height: 47px;
+    }
+
+    .contact_third_row_container{
+        margin-bottom: 0px;
+    }
+
+    .contact_second_row_container {
+        margin-bottom: 10px;
+    }
+
+    .phone_email_content{
+        height: 100%;
+    }
+
+    .phone_email_content:hover{
+        height: 57px;
+    }
+
+    i.contact_card_image{
+        font-size: 38px;
+    }
+
+    .phone_email_text{
+        font-size: 13px;
+    }
+
+
+    /* ------------------- author section ------------------- */
+    .author_section{
+        position: relative;
+        bottom: -19px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .author_message{
+        font-size: 10px;
+    }
+
+    .profile_image_author{
+        width: 17px;
+    }
+}

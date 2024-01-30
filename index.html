@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS desktop - 1920w or higher -->
+        <link rel="stylesheet" href="./static/css/style_desktop.css">
+
+        <!-- CSS desktop - between 1919w and 1336w  -->
+        <link rel="stylesheet" href="static/css/style_desktop_1336x768.css">
+        
+        <!-- CSS mobile - 1335w and lower -->
+        <link rel="stylesheet" href="static/css/style_mobile_smallest.css">
+   
+        <!-- fav icon -->
+        <link rel="shortcut icon" href="./static/img/profile_circular.png" type="image/x-icon">
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/a1863d7eac.js" crossorigin="anonymous"></script>
+
+        <title>Gabriel portfolio</title>
+    </head>
+    <body class>
+            <!-- header -->
+            <header class="header">
+                <nav class="nav">
+                    <!-- hamburguer button -->
+                    <i class="hambuguer_button fa-solid fa-bars"></i>
+                    <!-- links -->
+                    <a class="home_link_hamburguer_on navlink home_link" href="#home">Home</a>
+                    <a class="navlink about_link" href="#about">About</a>
+                    <a class="navlink skills_link" href="#skills">Skills</a>
+                    <a class="navlink projects_link" href="#projects">Projects</a>
+                    <a class="navlink contact_link" href="#contact">Contact</a>
+                    <img class="night_mode_icon" src="./static/img/sun_icon.svg" alt="sun and moon icons"></img>
+                </nav>
+            </header>
+            
+            <!-- home section -->
+            <section id="home" class="section home_section">
+                <!-- content -->
+                <div class="content home_content">
+                    <!-- messages left side -->
+                    <div class="messages_container left_side">
+                        <div class="message_and_button">
+                            <!-- messages -->
+                            <p class="hi_there">Hi there 👋</p>
+                            <p class="im_gabriel">I'm Gabriel,</p>
+                            <p class="backend_developer">Backend Developer</p>
+                            <!-- curriculo button -->
+                            <div class="curriculo_button_container">
+                                <a class="curriculo_home_button" download href="./static/job_documents/gabriel_freitas_resume_br.pdf" target="_blank">
+                                    <span class="curriculo_span">Currículo</span>
+                                    <i class="dowload_icon fa-solid fa-file-arrow-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- arrow icon -->
+                <div class="home_arrow_down_container arrow_down_container">
+                    <a class="arrow_icon fa-solid fa-chevron-down" href="#about"></a>
+                </div>
+                <!-- image right side -->
+                <div class="image_container right_side">
+                    <img class="profile_grey_picture" src="./static/img/profile_color_circle.png" alt="profile_image">
+                    <a class="nickname" href="https://github.com/lGabrielDev" target="_blank">
+                        <span class="nickname_span">lGabrielDev</span>
+                        <i class="github_icon fa-brands fa-github"></i>
+                    </a>
+                </div>
+                </div>
+            </section>
+            <!-- about section -->
+            <section id="about" class="section about_section">
+                <div class="content about_content">
+                    <!-- left side -->
+                    <div class="about_text_container left_side">
+                        <div class="paragraphs">
+                            <p class="about_first_paragraph">Meu nome é Gabriel, desenvolvedor backend especializado em criar aplicações web utilizando Java com Spring Boot. Na integração com banco de dados, tenho preferência por trabalhar com sistemas relacionais, como PostgreSQL e MySQL.</p>
+                            <p class="about_second_paragraph">Além disso, utilizo outras ferramentas/tecnologias que ajudam meu trabalho. Entre elas, Spring Data, JUnit, Mockito e Swagger, que auxiliam no desenvolvimento e garantem a qualidade das aplicações que desenvolvo.</p>
+                        </div>
+                    </div>
+                    <!-- arrow icon -->
+                    <div class="about_arrow_down_container arrow_down_container">
+                        <a class="arrow_icon fa-solid fa-chevron-down" href="#skills"></a>
+                    </div>
+                    <!-- right side -->
+                    <div class="about_title_container right_side">
+                        <h2 class="title">About</h2>
+                    </div>
+                </div>
+            </section>
+            <!-- skills section -->
+            <section id="skills" class="section skill_section">
+                <div class="content skills_content">
+                    <!-- left side -->
+                    <div class="skill_title_container left_side">
+                        <h2 class="title">Skills</h2>
+                    </div>
+                    <!-- arrow icon -->
+                    <div class="skills_arrow_container arrow_down_container">
+                        <a class="arrow_icon fa-solid fa-chevron-down" href="#projects"></a>
+                    </div>
+                    <!-- right side  - cards -->
+                    <div class="icons_container right_side">
+                        <div class="all_skills_cards">
+                            <!-- backend cards -->
+                            <!-- java -->
+                            <div class="skillCard skillCard_java">
+                                <img class="skill_icon" src="./static/img/java_icon.svg" alt="java icon">
+                                <p class="skill_title">java</p>
+                            </div>
+                            <!-- spring -->
+                            <div class="skillCard skillCard_spring">
+                                <img class="skill_icon" src="./static/img/spring_icon.svg" alt="spring icon">
+                                <p class="skill_title">Spring</p>
+                            </div>
+                            <!-- postgresql -->
+                            <div class="skillCard skillCard_psql">
+                                <img class="skill_icon" src="./static/img/psql_icon.svg" alt="postgresql icon">
+                                <p class="skill_title">PostgreSQL</p>
+                            </div>
+                            <!-- docker -->
+                            <div class="skillCard skillCard_docker">
+                                <img class="skill_icon" src="./static/img/docker_icon.svg" alt="docker icon">
+                                <p class="skill_title">Docker</p>
+                            </div>
+                            <!-- frontend cards -->
+                            <!-- html -->
+                            <div class="skillCard skillCard_html">
+                                <img class="skill_icon" src="./static/img/html_icon.svg" alt="html icon">
+                                <p class="skill_title">HTML</p>
+                            </div>
+                            <!-- css -->
+                            <div class="skillCard skillCard_css">
+                                <img class="skill_icon" src="./static/img/css_icon.svg" alt="css icon">
+                                <p class="skill_title">CSS</p>
+                            </div>
+                            <!-- js -->
+                            <div class="skillCard skillCard_js">
+                                <img class="skill_icon" src="./static/img/js_icon.svg" alt="js icon">
+                                <p class="skill_title">Javascript</p>
+                            </div>
+            
+                            <!-- others technologies -->
+                            <!-- linux -->
+                            <div class="skillCard skillCard_linux">
+                                <img class="skill_icon" src="./static/img/linux_icon.svg" alt="linux icon">
+                                <p class="skill_title">Linux</p>
+                            </div>
+                            <!-- git -->
+                            <div class="skillCard skillCard_git">
+                                <img class="skill_icon" src="./static/img/git_icon.svg" alt="git icon">
+                                <p class="skill_title">Git</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- projects section -->
+            <section id="projects" class="section projects_section">
+                <div class="content projects_content">
+                    <!-- left side - cards -->
+                    <div class="projects_cards_container">
+                        <!-- todolist -->
+                        <a class="project_card project_card_1" href="https://github.com/lGabrielDev/todolist_backend" target="_blank">
+                            <img class="todo_image" src="./static/img/todo_image.png" alt="todolist project image">
+                            <div class="todo_title_and_text">
+                                <p class="project_card_title">Todo-list API</p>
+                                <p class="project_card_description">Manage your daily tasks and be more organized. </p>
+                            </div>
+                            <div href="#" class="project_card_github_button">
+                                <i class="project_card_github_icon fa-brands fa-github"></i>
+                                <span class="check_github_text">Check</span>
+                            </div>
+                        </a>
+                        <!-- under construction -->
+                        <a class="project_card project_card_2" target="_self">
+                            <img class="todo_image" src="./static/img/under_construction_image.png" alt="todolist project image">
+                            <div class="todo_title_and_text">
+                                <p class="project_card_title">Under construction</p>
+                                <p class="project_card_description">...</p>
+                            </div>
+                            <div href="#" class="project_card_github_button">
+                                <i class="project_card_github_icon fa-brands fa-github"></i>
+                                <span class="check_github_text">Check</span>
+                            </div>
+                        </a>
+                        <a class="project_card project_card_3" target="_self">
+                            <img class="todo_image" src="./static/img/under_construction_image.png" alt="todolist project image">
+                            <div class="todo_title_and_text">
+                                <p class="project_card_title">Under construction</p>
+                                <p class="project_card_description">...</p>
+                            </div>
+                            <div href="#" class="project_card_github_button">
+                                <i class="project_card_github_icon fa-brands fa-github"></i>
+                                <span class="check_github_text">Check</span>
+                            </div>
+                        </a>
+                        <a class="project_card project_card_4" target="_self">
+                            <img class="todo_image" src="./static/img/under_construction_image.png" alt="todolist project image">
+                            <div class="todo_title_and_text">
+                                <p class="project_card_title">Under construction</p>
+                                <p class="project_card_description">...</p>
+                            </div>
+                            <div href="#" class="project_card_github_button">
+                                <i class="project_card_github_icon fa-brands fa-github"></i>
+                                <span class="check_github_text">Check</span>
+                            </div>
+                        </a>
+                        <a class="project_card project_card_5" target="_self">
+                            <img class="todo_image" src="./static/img/under_construction_image.png" alt="todolist project image">
+                            <div class="todo_title_and_text">
+                                <p class="project_card_title">Under construction</p>
+                                <p class="project_card_description">...</p>
+                            </div>
+                            <div href="#" class="project_card_github_button">
+                                <i class="project_card_github_icon fa-brands fa-github"></i>
+                                <span class="check_github_text">Check</span>
+                            </div>
+                        </a>
+                        <a class="project_card project_card_6" target="_self">
+                            <img class="todo_image" src="./static/img/under_construction_image.png" alt="todolist project image">
+                            <div class="todo_title_and_text">
+                                <p class="project_card_title">Under construction</p>
+                                <p class="project_card_description">...</p>
+                            </div>
+                            <div href="#" class="project_card_github_button">
+                                <i class="project_card_github_icon fa-brands fa-github"></i>
+                                <span class="check_github_text">Check</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- arrow icon -->
+                    <div class="projects_arrow_down_container arrow_down_container">
+                        <a class="projects_arrow_icon arrow_icon fa-solid fa-chevron-down" href="#contact"></a>
+                    </div>
+                    <!-- right side -->
+                    <div class="projects_title_container">
+                        <h2 class="projects_title title">Projects</h2>
+                    </div>
+                </div>
+            </section>
+            <!-- contact section -->
+            <section id="contact" class="section contact_section">
+                <div class="content contact_content">
+                    <!-- left side -->
+                    <div class="contact_left_side left_side">
+                        <h2 class="title">Contact</h2>
+                    </div>
+                    <!-- right side -->
+                    <div class="contact_right_side right_side">
+                        <!-- first row - curriculo, linkedin and github -->
+                        <div class="contact_rows contact_first_row_container">
+                            <!-- curriculo -->
+                            <a class="contact_card" href="./static/job_documents/gabriel_freitas_resume_br.pdf" target="_blank">
+                                <i class="contact_card_image fa-solid fa-file-arrow-down"></i>
+                                <p class="contact_card_title">Currículo</p>
+                            </a>
+                            <!-- linkedin -->
+                            <a class="contact_card linkedin_contact_card" href="https://www.linkedin.com/in/lgabrieldev/" target="_blank">
+                                <i class="contact_card_image fa-brands fa-linkedin"></i>
+                                <p class="contact_card_title">Linkedin</p>
+                            </a>
+                            <!-- github -->
+                            <a href="https://github.com/lGabrielDev" target="_blank" class="contact_card github_contact_card">
+                                <i class="contact_card_image fa-brands fa-github"></i>
+                                <p class="contact_card_title">GitHub</p>
+                            </a>
+                        </div>
+                        <!-- second row - phone -->
+                        <div class="contact_rows contact_second_row_container">
+                            <a href="https://wa.me/11954645349" target="_blank" class="phone_content phone_email_content contact_phone_content">
+                                <i class="phone_email_icons fa-brands fa-whatsapp"></i>
+                                <span class="phone_email_text">(11) 95464-5349</span>
+                            </a>
+                        </div>
+                        <!-- third row - email -->
+                        <div class="contact_rows contact_third_row_container">
+                            <a href="mailto:thegabrielfreitasbf@yahoo.com.br" class="phone_email_content contact_email_content">
+                                <i class="email_icon phone_email_icons fa-solid fa-envelope"></i>
+                                <span class="phone_email_text email_text">thegabrielfreitasbf@yahoo.com.br</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- author section -->
+                <section class="author_section">
+                    <p class="author_message_container">
+                        <span class="author_message">Made by lGabrielDev</span>
+                        <img class="profile_image_author" src="./static/img/profile_circular.png" alt="profile_picture">
+                    </p>
+                </section>
+        <!-- js -->
+        <script src="./static/js/HamburguerCollapse.js"></script>
+        <script src="./static/js/DarkMode.js"></script>
+    </body>
+</html>
