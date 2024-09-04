@@ -26,7 +26,7 @@
 
 <!-- about -->
 ## <img src="https://cdn2.iconfinder.com/data/icons/flat-pack-1/64/Computer-512.png" alt="todo list image icon" width="40px" align="center"> Sobre o projeto
-Página web criada para agrupar meus projetos principais.
+Página web criada para agrupar meus principais projetos.
 
 <hr>
 <br>
